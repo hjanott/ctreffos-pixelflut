@@ -1,5 +1,5 @@
 import socket
-import time
+
 # Die ist der Methodenkopf. Er besteht aus dem Keyword def (definiere) dem Methodennamen
 # und in den Klammern den Parametern. Der Doppelpunkt signalisert, dass ab hier der 
 # Methodeninhalt folgt.

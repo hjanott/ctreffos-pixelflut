@@ -1,5 +1,4 @@
 import socket
-import time
 
 ip_address = "192.168.188.246"
 port = 1337

@@ -5,7 +5,6 @@
 # python3 pixel_flood_request.py
 # Diese beiden import-Befehle kannst du fürs Erste ignorieren. 
 import socket
-import time
  
 # def definiert eine Methode, die wie ein Werkzeug für uns ist.
 # Wir können sie immer wieder aufrufen. 
