@@ -18,7 +18,7 @@ def send_pixel(x: int, y: int, rgb: str) -> None:
     
 def send_pixel_int(x: int, y: int, r: int, g: int, b: int) -> None:
     """sends a pixel in the RGB color"""
-    send_pixel(x,y,f"{r:X}{g:X}{b:X}")
+    send_pixel(x, y, f"{r:X}{g:X}{b:X}")
 
 def get_hex_color(x: int, y: int) -> str:
     """gets a pixels RGB color as hex string"""
