@@ -1,6 +1,7 @@
 import socket
 
-ip_address = "192.168.188.246"
+with open("server_ip.txt") as f: # read the server ip from a file, placed in the same directory
+    ip_address = f.read().strip()
 port = 1337
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((ip_address, port))
