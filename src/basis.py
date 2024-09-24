@@ -7,9 +7,8 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((ip_address, port))
 
 def send_message(message: str) -> None:
-    """sends a pixel in the message coordinates and RGB color. format needs to be 'PX X Y RGB'"""
+    """sends a pixel in the message coordinates and RGB color. Format needs to be 'PX X Y RGB'"""
     s.sendall(message.encode())
-    print("send the pixel")
     
 def send_pixel(x: int, y: int, rgb: str) -> None:
     """sends a pixel in the RGB color"""
@@ -22,7 +21,7 @@ def send_pixel_int(x: int, y: int, r: int, g: int, b: int) -> None:
 
 def get_hex_color(x: int, y: int) -> str:
     """gets a pixels RGB color as hex string"""
-    message = f'PX {x} {y}\n'
+    message = f'PX {x} {y}\r\n'
     s.sendall(message.encode())
     #Länge vom String + Leerzeichen + RGB-Hexcode)
     expected_message_length = len(f'{message} ffffff'.encode())
